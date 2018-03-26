@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Baby Bubble Pop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1">
+    <style>
+        * {margin:0; padding: 0;}
+        html, body {width: 100%; height: 100%;}
+        canvas {display: block;}
+    </style>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+    </body>
+    <script type="text/javascript">
+        (function() {
+            'use strict';
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext("2d");
+
+            function game() {
+                
+                class Bubble {
+
+                }
+                
+                function drawBubble(x,y) {
+                context.beginPath();
+                context.arc(x, y, 50, 0, 2 * Math.PI);
+                context.stroke();
+                }
+                drawBubble();
+            }
+
+            game();
+        })();
+    </script>
+</html>
