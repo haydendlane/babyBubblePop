@@ -49,7 +49,7 @@ class Bubble {
         audio.play();
     }
 }
-
+document.addEventListener("touchstart", mouseOver, false);
 document.addEventListener("mousemove", mouseOver, false);
 function mouseOver(e) {
     var mouseX = e.x;
