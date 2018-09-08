@@ -13,27 +13,5 @@
     <body>
         <canvas id="canvas"></canvas>
     </body>
-    <script type="text/javascript">
-        (function() {
-            'use strict';
-            var canvas = document.getElementById("canvas");
-            var context = canvas.getContext("2d");
-
-            function game() {
-                
-                class Bubble {
-
-                }
-                
-                function drawBubble(x,y) {
-                context.beginPath();
-                context.arc(x, y, 50, 0, 2 * Math.PI);
-                context.stroke();
-                }
-                drawBubble();
-            }
-
-            game();
-        })();
-    </script>
+    <script src="app.js"></script>
 </html>
